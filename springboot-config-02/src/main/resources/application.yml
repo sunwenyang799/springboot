@@ -1,0 +1,28 @@
+#为什么在yml中配置外部配置文件不生效？
+#原因是在application配置文件里面指定spring.config.location的优先级太低了，
+#加载太迟了，导致加载不到特定的配置文件，因此在通过命令行启动的方式可以提高优先级，加载到配置文件。
+
+#命令还启动方式：
+#！！！！！！！！！！！！！！！！！
+#java -jar springboot-config-02-0.0.1-SNAPSHOT.jar --spring.config.location=F:/application.properties
+#指定外部配置文件后不互补
+#当使用来配置自定义配置位置时spring.config.location，它们将替换默认位置。
+#例如，如果spring.config.location使用值配置classpath:/custom-config/,file:./custom-config/，则搜索顺序如下：
+#file:./custom-config/
+#classpath:custom-config/
+#这个时候是不会加载内部配置文件的
+
+#或者，当使用来配置自定义配置位置时spring.config.additional-location，除默认位置外，还会使用它们。在默认位置之前搜索其他位置。例如，如果classpath:/custom-config/,file:./custom-config/配置了的其他位置，则搜索顺序将变为以下内容：
+#file:./custom-config/
+#classpath:custom-config/
+#file:./config/
+#file:./
+#classpath:/config/
+#classpath:/
+
+#spring:
+#  config:
+#    location: F:/application.properties
+server:
+  servlet:
+    context-path: /config

@@ -1,0 +1,55 @@
+server:
+  port: 8081
+
+#application.yml 用---将文件分档,使用spring:profiles:active:prod指定配置
+#也可以在启动时配置命令行参数--spring.profiles.active=dev
+#也可以在虚拟机参数中加上-Dspring.profiles.active=dev指定配置
+spring:
+  profiles:
+    active: prod
+
+#字面量写法
+name: 123
+
+#对象，Map写法
+friends:
+ age: 18
+ name: zhangsan
+#对象，Map行内写法
+#friends: {age: 18,name: zhangsan}
+
+#数组(list)写法
+pets:
+ - dog
+ - cat
+ - fish
+
+#数组行内写法
+#pets: [dog,cat,fish]
+
+#person:
+# age: 22
+# boss: false
+# birthday: 2020/09/23
+# maps: {key1: 1,key2: 2}
+# lists:
+#  - zhangsan
+#  - lisi
+# dog:
+#  name: 旺财
+#  age: 3
+# last-name: 111
+
+---
+
+server:
+  port: 8082
+spring:
+  profiles: dev
+
+---
+server:
+  port: 8083
+
+spring:
+  profiles: prod
