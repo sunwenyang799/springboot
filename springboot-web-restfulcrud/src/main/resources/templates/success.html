@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--    th:text 将div里面的文本内容设置为-->
+    <h1 id = "test" th:id="${success}" th:text="${success}">这里显示欢迎信息</h1>
+    <span th:text="${hello}"></span>
+    <span th:utext="*{hello1}"></span>
+
+    <!--th:each="user:${users}"在h3上,有3个h3标签-->
+    <h3 th:text="${user}" th:each="user:${users}"></h3>
+
+    <!--th:each="user:${users}"在span上,有3个span标签-->
+    <h3>
+        <span th:each=" user: ${users}">[[${user}]] </span>
+    </h3>
+</body>
+</html>
