@@ -1,6 +1,7 @@
 package com.springboot.com.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Arrays;
@@ -14,6 +15,10 @@ import java.util.Map;
 @Controller
 public class HelloController {
 
+//    @GetMapping("/index")
+//    public String index(){
+//        return "index";
+//    }
     @RequestMapping("/success")
     public String success(Map<String,Object> map){
         //public static final String DEFAULT_PREFIX = "classpath:/templates/";
