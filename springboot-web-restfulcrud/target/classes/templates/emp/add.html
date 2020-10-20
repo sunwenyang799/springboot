@@ -52,36 +52,44 @@
 
 				<main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
 					<form th:action="@{/emp}" method="post">
+						<!--
+							发送put请求修改员工数据：
+							1、springmvc中配置HiddenHttpMethodFilter(Springboot默认配置好了2.x之后需要主动开启)
+							2、页面创建一个post表单
+							3、创建一个input项，name="_method" value值就是我们指定的请求方式
+						-->
+						<input type="hidden" name="_method" value="put" th:if="${emps!=null}"/>
+						<input type="hidden" name="id" th:value="${emps.id}" th:if="${emps!=null}">
 						<div class="form-group">
 							<label>LastName</label>
-							<input name="lastName" type="text" class="form-control" placeholder="LastName">
+							<input name="lastName" type="text" class="form-control" placeholder="LastName" th:value="${emps!=null}?${emps.lastName}">
 						</div>
 						<div class="form-group">
 							<label>Email</label>
-							<input name="email" type="email" class="form-control" placeholder="email">
+							<input name="email" type="email" class="form-control" placeholder="email" th:value="${emps!=null}?${emps.email}">
 						</div>
 						<div class="form-group">
 							<label>Gender</label><br/>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="gender"  value="1">
+								<input class="form-check-input" type="radio" name="gender"  value="1" th:checked="${emps!=null}?${emps.gender==1}">
 								<label class="form-check-label">男</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="gender"  value="0">
+								<input class="form-check-input" type="radio" name="gender"  value="0" th:checked="${emps!=null}?${emps.gender==0}">
 								<label class="form-check-label">女</label>
 							</div>
 						</div>
 						<div class="form-group">
 							<label>department</label>
 							<select class="form-control" name="department.id">
-								<option  th:value="${dept.id}" th:each="dept:${depts}" th:text="${dept.departmentName}"></option>
+								<option th:selected="${emps!=null}?${emps.department.id == dept.id}"  th:value="${dept.id}" th:each="dept:${depts}" th:text="${dept.departmentName}"></option>
 							</select>
 						</div>
 						<div class="form-group">
 							<label>Birth</label>
-							<input name="birth" type="text" class="form-control" placeholder="Birth">
+							<input name="birth" type="text" class="form-control" placeholder="Birth" th:value="${emps!=null}?${#dates.format(emps.birth, 'yyyy-MM-dd HH:mm')}">
 						</div>
-						<button type="submit" class="btn btn-primary">添加</button>
+						<button type="submit" class="btn btn-primary" th:text="${emps!=null}?'修改':'添加'">添加</button>
 					</form>
 				</main>
 			</div>
@@ -89,7 +97,7 @@
 
 		<!-- Bootstrap core JavaScript
     ================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
+		 <!--Placed at the end of the document so the pages load faster-->
 		<script type="text/javascript" src="asserts/js/jquery-3.2.1.slim.min.js"></script>
 		<script type="text/javascript" src="asserts/js/popper.min.js"></script>
 		<script type="text/javascript" src="asserts/js/bootstrap.min.js"></script>
