@@ -9,10 +9,10 @@ import org.springframework.stereotype.Component;
  * @ Date       ：Created in 20:09 2020/10/20
  * @ Description：自定义tomcat配置
  */
-@Component
-public class TomcatConfig implements WebServerFactoryCustomizer<TomcatServletWebServerFactory> {
-    @Override
-    public void customize(TomcatServletWebServerFactory factory) {
-        factory.setPort(8083);
-    }
-}
+//@Component
+//public class TomcatConfig implements WebServerFactoryCustomizer<TomcatServletWebServerFactory> {
+//    @Override
+//    public void customize(TomcatServletWebServerFactory factory) {
+//        factory.setPort(8083);
+//    }
+//}
