@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: admin
+    url: jdbc:mysql://192.168.145.128:3306/db_spring
+    schema:
+    - classpath:department.sql
+#   修改数据库模式配置
+#  always为始终执行初始化，embedded只初始化内存数据库（默认值），never为不执行初始化。
+    initialization-mode: always
