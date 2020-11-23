@@ -1,11 +1,9 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.145.128:3306/mybatis
     username: root
     password: admin
-    url: jdbc:mysql://192.168.145.128:3306/db_spring
     type: com.alibaba.druid.pool.DruidDataSource
-      #   数据源其他配置
     initialSize: 5
     minIdle: 5
     maxActive: 20
@@ -17,14 +15,14 @@ spring:
     testOnBorrow: false
     testOnReturn: false
     poolPreparedStatements: true
-    #   配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+    #   \u914D\u7F6E\u76D1\u63A7\u7EDF\u8BA1\u62E6\u622A\u7684filters\uFF0C\u53BB\u6389\u540E\u76D1\u63A7\u754C\u9762sql\u65E0\u6CD5\u7EDF\u8BA1\uFF0C'wall'\u7528\u4E8E\u9632\u706B\u5899
     filters: stat,wall
     maxPoolPreparedStatementPerConnectionSize: 20
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
-#    修改schema运行脚本路径,也可以修改platform和fallback
-#    schema:
-#    - classpath:department.sql
-#   修改数据库模式配置
-#  always为始终执行初始化，embedded只初始化内存数据库（默认值），never为不执行初始化。
+    schema:
+      - classpath:sql/department.sql
+      - classpath:sql/employee.sql
+#   \u5F00\u542F\u811A\u672C\u6267\u884C
 #    initialization-mode: always
+
