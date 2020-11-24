@@ -25,4 +25,6 @@ spring:
       - classpath:sql/employee.sql
 #   \u5F00\u542F\u811A\u672C\u6267\u884C
 #    initialization-mode: always
-
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
