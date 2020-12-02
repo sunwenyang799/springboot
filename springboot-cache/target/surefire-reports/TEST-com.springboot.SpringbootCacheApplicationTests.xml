@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.springboot.SpringbootCacheApplicationTests" time="9.691" tests="3" errors="2" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="D:\springboot\springboot-cache\target\test-classes;D:\springboot\springboot-cache\target\classes;D:\devtools\repository\org\springframework\boot\spring-boot-starter-cache\2.4.0\spring-boot-starter-cache-2.4.0.jar;D:\devtools\repository\org\springframework\boot\spring-boot-starter\2.4.0\spring-boot-starter-2.4.0.jar;D:\devtools\repository\org\springframework\boot\spring-boot\2.4.0\spring-boot-2.4.0.jar;D:\devtools\repository\org\springframework\boot\spring-boot-autoconfigure\2.4.0\spring-boot-autoconfigure-2.4.0.jar;D:\devtools\repository\org\springframework\boot\spring-boot-starter-logging\2.4.0\spring-boot-starter-logging-2.4.0.jar;D:\devtools\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;D:\devtools\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;D:\devtools\repository\org\apache\logging\log4j\log4j-to-slf4j\2.13.3\log4j-to-slf4j-2.13.3.jar;D:\devtools\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;D:\devtools\repository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;D:\devtools\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;D:\devtools\repository\org\yaml\snakeyaml\1.27\snakeyaml-1.27.jar;D:\devtools\repository\org\springframework\spring-context-support\5.3.1\spring-context-support-5.3.1.jar;D:\devtools\repository\org\springframework\spring-beans\5.3.1\spring-beans-5.3.1.jar;D:\devtools\repository\org\springframework\spring-context\5.3.1\spring-context-5.3.1.jar;D:\devtools\repository\org\springframework\boot\spring-boot-starter-web\2.4.0\spring-boot-starter-web-2.4.0.jar;D:\devtools\repository\org\springframework\boot\spring-boot-starter-json\2.4.0\spring-boot-starter-json-2.4.0.jar;D:\devtools\repository\com\fasterxml\jackson\core\jackson-databind\2.11.3\jackson-databind-2.11.3.jar;D:\devtools\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.3\jackson-annotations-2.11.3.jar;D:\devtools\repository\com\fasterxml\jackson\core\jackson-core\2.11.3\jackson-core-2.11.3.jar;D:\devtools\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.11.3\jackson-datatype-jdk8-2.11.3.jar;D:\devtools\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.11.3\jackson-datatype-jsr310-2.11.3.jar;D:\devtools\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.11.3\jackson-module-parameter-names-2.11.3.jar;D:\devtools\repository\org\springframework\boot\spring-boot-starter-tomcat\2.4.0\spring-boot-starter-tomcat-2.4.0.jar;D:\devtools\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.39\tomcat-embed-core-9.0.39.jar;D:\devtools\repository\org\glassfish\jakarta.el\3.0.3\jakarta.el-3.0.3.jar;D:\devtools\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.39\tomcat-embed-websocket-9.0.39.jar;D:\devtools\repository\org\springframework\spring-web\5.3.1\spring-web-5.3.1.jar;D:\devtools\repository\org\springframework\spring-webmvc\5.3.1\spring-webmvc-5.3.1.jar;D:\devtools\repository\org\springframework\spring-aop\5.3.1\spring-aop-5.3.1.jar;D:\devtools\repository\org\springframework\spring-expression\5.3.1\spring-expression-5.3.1.jar;D:\devtools\repository\org\mybatis\spring\boot\mybatis-spring-boot-starter\2.1.4\mybatis-spring-boot-starter-2.1.4.jar;D:\devtools\repository\org\springframework\boot\spring-boot-starter-jdbc\2.4.0\spring-boot-starter-jdbc-2.4.0.jar;D:\devtools\repository\com\zaxxer\HikariCP\3.4.5\HikariCP-3.4.5.jar;D:\devtools\repository\org\springframework\spring-jdbc\5.3.1\spring-jdbc-5.3.1.jar;D:\devtools\repository\org\mybatis\spring\boot\mybatis-spring-boot-autoconfigure\2.1.4\mybatis-spring-boot-autoconfigure-2.1.4.jar;D:\devtools\repository\org\mybatis\mybatis\3.5.6\mybatis-3.5.6.jar;D:\devtools\repository\org\mybatis\mybatis-spring\2.0.6\mybatis-spring-2.0.6.jar;D:\devtools\repository\mysql\mysql-connector-java\8.0.22\mysql-connector-java-8.0.22.jar;D:\devtools\repository\org\springframework\boot\spring-boot-starter-test\2.4.0\spring-boot-starter-test-2.4.0.jar;D:\devtools\repository\org\springframework\boot\spring-boot-test\2.4.0\spring-boot-test-2.4.0.jar;D:\devtools\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.4.0\spring-boot-test-autoconfigure-2.4.0.jar;D:\devtools\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;D:\devtools\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;D:\devtools\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;D:\devtools\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;D:\devtools\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;D:\devtools\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;D:\devtools\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;D:\devtools\repository\org\assertj\assertj-core\3.18.1\assertj-core-3.18.1.jar;D:\devtools\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;D:\devtools\repository\org\junit\jupiter\junit-jupiter\5.7.0\junit-jupiter-5.7.0.jar;D:\devtools\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;D:\devtools\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;D:\devtools\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;D:\devtools\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;D:\devtools\repository\org\junit\jupiter\junit-jupiter-params\5.7.0\junit-jupiter-params-5.7.0.jar;D:\devtools\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;D:\devtools\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;D:\devtools\repository\org\mockito\mockito-core\3.6.0\mockito-core-3.6.0.jar;D:\devtools\repository\net\bytebuddy\byte-buddy\1.10.18\byte-buddy-1.10.18.jar;D:\devtools\repository\net\bytebuddy\byte-buddy-agent\1.10.18\byte-buddy-agent-1.10.18.jar;D:\devtools\repository\org\objenesis\objenesis\3.1\objenesis-3.1.jar;D:\devtools\repository\org\mockito\mockito-junit-jupiter\3.6.0\mockito-junit-jupiter-3.6.0.jar;D:\devtools\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;D:\devtools\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\devtools\repository\org\springframework\spring-core\5.3.1\spring-core-5.3.1.jar;D:\devtools\repository\org\springframework\spring-jcl\5.3.1\spring-jcl-5.3.1.jar;D:\devtools\repository\org\springframework\spring-test\5.3.1\spring-test-5.3.1.jar;D:\devtools\repository\org\xmlunit\xmlunit-core\2.7.0\xmlunit-core-2.7.0.jar;D:\devtools\repository\org\springframework\boot\spring-boot-starter-data-redis\2.4.0\spring-boot-starter-data-redis-2.4.0.jar;D:\devtools\repository\org\springframework\data\spring-data-redis\2.4.1\spring-data-redis-2.4.1.jar;D:\devtools\repository\org\springframework\data\spring-data-keyvalue\2.4.1\spring-data-keyvalue-2.4.1.jar;D:\devtools\repository\org\springframework\data\spring-data-commons\2.4.1\spring-data-commons-2.4.1.jar;D:\devtools\repository\org\springframework\spring-tx\5.3.1\spring-tx-5.3.1.jar;D:\devtools\repository\org\springframework\spring-oxm\5.3.1\spring-oxm-5.3.1.jar;D:\devtools\repository\io\lettuce\lettuce-core\6.0.1.RELEASE\lettuce-core-6.0.1.RELEASE.jar;D:\devtools\repository\io\netty\netty-common\4.1.54.Final\netty-common-4.1.54.Final.jar;D:\devtools\repository\io\netty\netty-handler\4.1.54.Final\netty-handler-4.1.54.Final.jar;D:\devtools\repository\io\netty\netty-resolver\4.1.54.Final\netty-resolver-4.1.54.Final.jar;D:\devtools\repository\io\netty\netty-buffer\4.1.54.Final\netty-buffer-4.1.54.Final.jar;D:\devtools\repository\io\netty\netty-codec\4.1.54.Final\netty-codec-4.1.54.Final.jar;D:\devtools\repository\io\netty\netty-transport\4.1.54.Final\netty-transport-4.1.54.Final.jar;D:\devtools\repository\io\projectreactor\reactor-core\3.4.0\reactor-core-3.4.0.jar;D:\devtools\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\孙闻钖\AppData\Local\Temp\surefire115414281698209028\surefirebooter7024856636597613827.jar C:\Users\孙闻钖\AppData\Local\Temp\surefire115414281698209028 2020-12-02T21-01-37_092-jvmRun1 surefire7341316210311618949tmp surefire_02237006398993944504tmp"/>
+    <property name="surefire.test.class.path" value="D:\springboot\springboot-cache\target\test-classes;D:\springboot\springboot-cache\target\classes;D:\devtools\repository\org\springframework\boot\spring-boot-starter-cache\2.4.0\spring-boot-starter-cache-2.4.0.jar;D:\devtools\repository\org\springframework\boot\spring-boot-starter\2.4.0\spring-boot-starter-2.4.0.jar;D:\devtools\repository\org\springframework\boot\spring-boot\2.4.0\spring-boot-2.4.0.jar;D:\devtools\repository\org\springframework\boot\spring-boot-autoconfigure\2.4.0\spring-boot-autoconfigure-2.4.0.jar;D:\devtools\repository\org\springframework\boot\spring-boot-starter-logging\2.4.0\spring-boot-starter-logging-2.4.0.jar;D:\devtools\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;D:\devtools\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;D:\devtools\repository\org\apache\logging\log4j\log4j-to-slf4j\2.13.3\log4j-to-slf4j-2.13.3.jar;D:\devtools\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;D:\devtools\repository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;D:\devtools\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;D:\devtools\repository\org\yaml\snakeyaml\1.27\snakeyaml-1.27.jar;D:\devtools\repository\org\springframework\spring-context-support\5.3.1\spring-context-support-5.3.1.jar;D:\devtools\repository\org\springframework\spring-beans\5.3.1\spring-beans-5.3.1.jar;D:\devtools\repository\org\springframework\spring-context\5.3.1\spring-context-5.3.1.jar;D:\devtools\repository\org\springframework\boot\spring-boot-starter-web\2.4.0\spring-boot-starter-web-2.4.0.jar;D:\devtools\repository\org\springframework\boot\spring-boot-starter-json\2.4.0\spring-boot-starter-json-2.4.0.jar;D:\devtools\repository\com\fasterxml\jackson\core\jackson-databind\2.11.3\jackson-databind-2.11.3.jar;D:\devtools\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.3\jackson-annotations-2.11.3.jar;D:\devtools\repository\com\fasterxml\jackson\core\jackson-core\2.11.3\jackson-core-2.11.3.jar;D:\devtools\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.11.3\jackson-datatype-jdk8-2.11.3.jar;D:\devtools\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.11.3\jackson-datatype-jsr310-2.11.3.jar;D:\devtools\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.11.3\jackson-module-parameter-names-2.11.3.jar;D:\devtools\repository\org\springframework\boot\spring-boot-starter-tomcat\2.4.0\spring-boot-starter-tomcat-2.4.0.jar;D:\devtools\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.39\tomcat-embed-core-9.0.39.jar;D:\devtools\repository\org\glassfish\jakarta.el\3.0.3\jakarta.el-3.0.3.jar;D:\devtools\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.39\tomcat-embed-websocket-9.0.39.jar;D:\devtools\repository\org\springframework\spring-web\5.3.1\spring-web-5.3.1.jar;D:\devtools\repository\org\springframework\spring-webmvc\5.3.1\spring-webmvc-5.3.1.jar;D:\devtools\repository\org\springframework\spring-aop\5.3.1\spring-aop-5.3.1.jar;D:\devtools\repository\org\springframework\spring-expression\5.3.1\spring-expression-5.3.1.jar;D:\devtools\repository\org\mybatis\spring\boot\mybatis-spring-boot-starter\2.1.4\mybatis-spring-boot-starter-2.1.4.jar;D:\devtools\repository\org\springframework\boot\spring-boot-starter-jdbc\2.4.0\spring-boot-starter-jdbc-2.4.0.jar;D:\devtools\repository\com\zaxxer\HikariCP\3.4.5\HikariCP-3.4.5.jar;D:\devtools\repository\org\springframework\spring-jdbc\5.3.1\spring-jdbc-5.3.1.jar;D:\devtools\repository\org\mybatis\spring\boot\mybatis-spring-boot-autoconfigure\2.1.4\mybatis-spring-boot-autoconfigure-2.1.4.jar;D:\devtools\repository\org\mybatis\mybatis\3.5.6\mybatis-3.5.6.jar;D:\devtools\repository\org\mybatis\mybatis-spring\2.0.6\mybatis-spring-2.0.6.jar;D:\devtools\repository\mysql\mysql-connector-java\8.0.22\mysql-connector-java-8.0.22.jar;D:\devtools\repository\org\springframework\boot\spring-boot-starter-test\2.4.0\spring-boot-starter-test-2.4.0.jar;D:\devtools\repository\org\springframework\boot\spring-boot-test\2.4.0\spring-boot-test-2.4.0.jar;D:\devtools\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.4.0\spring-boot-test-autoconfigure-2.4.0.jar;D:\devtools\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;D:\devtools\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;D:\devtools\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;D:\devtools\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;D:\devtools\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;D:\devtools\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;D:\devtools\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;D:\devtools\repository\org\assertj\assertj-core\3.18.1\assertj-core-3.18.1.jar;D:\devtools\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;D:\devtools\repository\org\junit\jupiter\junit-jupiter\5.7.0\junit-jupiter-5.7.0.jar;D:\devtools\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;D:\devtools\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;D:\devtools\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;D:\devtools\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;D:\devtools\repository\org\junit\jupiter\junit-jupiter-params\5.7.0\junit-jupiter-params-5.7.0.jar;D:\devtools\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;D:\devtools\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;D:\devtools\repository\org\mockito\mockito-core\3.6.0\mockito-core-3.6.0.jar;D:\devtools\repository\net\bytebuddy\byte-buddy\1.10.18\byte-buddy-1.10.18.jar;D:\devtools\repository\net\bytebuddy\byte-buddy-agent\1.10.18\byte-buddy-agent-1.10.18.jar;D:\devtools\repository\org\objenesis\objenesis\3.1\objenesis-3.1.jar;D:\devtools\repository\org\mockito\mockito-junit-jupiter\3.6.0\mockito-junit-jupiter-3.6.0.jar;D:\devtools\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;D:\devtools\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\devtools\repository\org\springframework\spring-core\5.3.1\spring-core-5.3.1.jar;D:\devtools\repository\org\springframework\spring-jcl\5.3.1\spring-jcl-5.3.1.jar;D:\devtools\repository\org\springframework\spring-test\5.3.1\spring-test-5.3.1.jar;D:\devtools\repository\org\xmlunit\xmlunit-core\2.7.0\xmlunit-core-2.7.0.jar;D:\devtools\repository\org\springframework\boot\spring-boot-starter-data-redis\2.4.0\spring-boot-starter-data-redis-2.4.0.jar;D:\devtools\repository\org\springframework\data\spring-data-redis\2.4.1\spring-data-redis-2.4.1.jar;D:\devtools\repository\org\springframework\data\spring-data-keyvalue\2.4.1\spring-data-keyvalue-2.4.1.jar;D:\devtools\repository\org\springframework\data\spring-data-commons\2.4.1\spring-data-commons-2.4.1.jar;D:\devtools\repository\org\springframework\spring-tx\5.3.1\spring-tx-5.3.1.jar;D:\devtools\repository\org\springframework\spring-oxm\5.3.1\spring-oxm-5.3.1.jar;D:\devtools\repository\io\lettuce\lettuce-core\6.0.1.RELEASE\lettuce-core-6.0.1.RELEASE.jar;D:\devtools\repository\io\netty\netty-common\4.1.54.Final\netty-common-4.1.54.Final.jar;D:\devtools\repository\io\netty\netty-handler\4.1.54.Final\netty-handler-4.1.54.Final.jar;D:\devtools\repository\io\netty\netty-resolver\4.1.54.Final\netty-resolver-4.1.54.Final.jar;D:\devtools\repository\io\netty\netty-buffer\4.1.54.Final\netty-buffer-4.1.54.Final.jar;D:\devtools\repository\io\netty\netty-codec\4.1.54.Final\netty-codec-4.1.54.Final.jar;D:\devtools\repository\io\netty\netty-transport\4.1.54.Final\netty-transport-4.1.54.Final.jar;D:\devtools\repository\io\projectreactor\reactor-core\3.4.0\reactor-core-3.4.0.jar;D:\devtools\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\孙闻钖"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_131\jre"/>
+    <property name="basedir" value="D:\springboot\springboot-cache"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\孙闻钖\AppData\Local\Temp\surefire115414281698209028\surefirebooter7024856636597613827.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="user.name" value="孙闻钖"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="D:\devtools\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\孙闻钖\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2020.2"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="user.dir" value="D:\springboot\springboot-cache"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\devtools\SecureCRT\;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\Java\jdk1.8.0_131\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\devtools\mysql-5.6.19\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Git\cmd;C:\Users\孙闻钖\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testStringRedisTemplate" classname="com.springboot.SpringbootCacheApplicationTests" time="1.69"/>
+  <testcase name="contextLoads" classname="com.springboot.SpringbootCacheApplicationTests" time="5.156">
+    <error message="nested exception is org.apache.ibatis.exceptions.PersistenceException: &#10;### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure&#10;&#10;The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.&#10;### The error may exist in com/springboot/mapper/EmployeeMapper.java (best guess)&#10;### The error may involve com.springboot.mapper.EmployeeMapper.getEmpById&#10;### The error occurred while executing a query&#10;### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure&#10;&#10;The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server." type="org.mybatis.spring.MyBatisSystemException">org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/springboot/mapper/EmployeeMapper.java (best guess)
+### The error may involve com.springboot.mapper.EmployeeMapper.getEmpById
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.springboot.SpringbootCacheApplicationTests.contextLoads(SpringbootCacheApplicationTests.java:59)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/springboot/mapper/EmployeeMapper.java (best guess)
+### The error may involve com.springboot.mapper.EmployeeMapper.getEmpById
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.springboot.SpringbootCacheApplicationTests.contextLoads(SpringbootCacheApplicationTests.java:59)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: 
+Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.springboot.SpringbootCacheApplicationTests.contextLoads(SpringbootCacheApplicationTests.java:59)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.springboot.SpringbootCacheApplicationTests.contextLoads(SpringbootCacheApplicationTests.java:59)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.springboot.SpringbootCacheApplicationTests.contextLoads(SpringbootCacheApplicationTests.java:59)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.springboot.SpringbootCacheApplicationTests.contextLoads(SpringbootCacheApplicationTests.java:59)
+</error>
+    <system-out><![CDATA[2020-12-02 21:01:42.413  INFO 7044 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-02 21:01:47.525 ERROR 7044 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477) [HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560) [HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) [HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) [HikariCP-3.4.5.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158) [spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116) [spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79) [spring-jdbc-5.3.1.jar:5.3.1]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80) [mybatis-spring-2.0.6.jar:2.0.6]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67) [mybatis-spring-2.0.6.jar:2.0.6]
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337) [mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86) [mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62) [mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325) [mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) [mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) [mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89) [mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) [mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) [mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76) [mybatis-3.5.6.jar:3.5.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427) [mybatis-spring-2.0.6.jar:2.0.6]
+	at com.sun.proxy.$Proxy72.selectOne(Unknown Source) [na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160) [mybatis-spring-2.0.6.jar:2.0.6]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87) [mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152) [mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85) [mybatis-3.5.6.jar:3.5.6]
+	at com.sun.proxy.$Proxy77.getEmpById(Unknown Source) [na:na]
+	at com.springboot.SpringbootCacheApplicationTests.contextLoads(SpringbootCacheApplicationTests.java:59) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688) [junit-platform-commons-1.7.0.jar:1.7.0]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) [junit-jupiter-engine-5.7.0.jar:5.7.0]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) [junit-jupiter-engine-5.7.0.jar:5.7.0]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149) [junit-jupiter-engine-5.7.0.jar:5.7.0]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140) [junit-jupiter-engine-5.7.0.jar:5.7.0]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84) [junit-jupiter-engine-5.7.0.jar:5.7.0]
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.7.0.jar:5.7.0]
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105) ~[junit-jupiter-engine-5.7.0.jar:5.7.0]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.7.0.jar:5.7.0]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.7.0.jar:5.7.0]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.7.0.jar:5.7.0]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.7.0.jar:5.7.0]
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104) ~[junit-jupiter-engine-5.7.0.jar:5.7.0]
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98) ~[junit-jupiter-engine-5.7.0.jar:5.7.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:210) ~[junit-jupiter-engine-5.7.0.jar:5.7.0]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:206) ~[junit-jupiter-engine-5.7.0.jar:5.7.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131) ~[junit-jupiter-engine-5.7.0.jar:5.7.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65) ~[junit-jupiter-engine-5.7.0.jar:5.7.0]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1249) ~[na:1.8.0_131]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1249) ~[na:1.8.0_131]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.7.0.jar:1.7.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_131]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	... 102 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_131]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_131]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_131]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_131]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_131]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	... 105 common frames omitted
+
+]]></system-out>
+  </testcase>
+  <testcase name="testRedisTemplate" classname="com.springboot.SpringbootCacheApplicationTests" time="0">
+    <error message="Cannot deserialize; nested exception is org.springframework.core.serializer.support.SerializationFailedException: Failed to deserialize payload. Is the byte array a result of corresponding serialization for DefaultDeserializer?; nested exception is java.io.StreamCorruptedException: invalid stream header: 61616161" type="org.springframework.data.redis.serializer.SerializationException">org.springframework.data.redis.serializer.SerializationException: Cannot deserialize; nested exception is org.springframework.core.serializer.support.SerializationFailedException: Failed to deserialize payload. Is the byte array a result of corresponding serialization for DefaultDeserializer?; nested exception is java.io.StreamCorruptedException: invalid stream header: 61616161
+	at com.springboot.SpringbootCacheApplicationTests.testRedisTemplate(SpringbootCacheApplicationTests.java:53)
+Caused by: org.springframework.core.serializer.support.SerializationFailedException: Failed to deserialize payload. Is the byte array a result of corresponding serialization for DefaultDeserializer?; nested exception is java.io.StreamCorruptedException: invalid stream header: 61616161
+	at com.springboot.SpringbootCacheApplicationTests.testRedisTemplate(SpringbootCacheApplicationTests.java:53)
+Caused by: java.io.StreamCorruptedException: invalid stream header: 61616161
+	at com.springboot.SpringbootCacheApplicationTests.testRedisTemplate(SpringbootCacheApplicationTests.java:53)
+</error>
+  </testcase>
+</testsuite>

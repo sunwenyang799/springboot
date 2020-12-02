@@ -1,0 +1,8 @@
+
+my:
+  hello:
+    first-name: 我
+    last-name: 你好
+server:
+  port: 8081
+

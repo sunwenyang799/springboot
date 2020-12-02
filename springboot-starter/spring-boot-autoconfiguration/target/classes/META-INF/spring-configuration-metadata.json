@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "my.hello",
+      "type": "com.springboot.autoconfiguration.HelloProperties",
+      "sourceType": "com.springboot.autoconfiguration.HelloProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "my.hello.first-name",
+      "type": "java.lang.String",
+      "sourceType": "com.springboot.autoconfiguration.HelloProperties"
+    },
+    {
+      "name": "my.hello.last-name",
+      "type": "java.lang.String",
+      "sourceType": "com.springboot.autoconfiguration.HelloProperties"
+    }
+  ],
+  "hints": []
+}

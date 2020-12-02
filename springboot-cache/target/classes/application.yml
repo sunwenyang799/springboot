@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: admin
+    url: jdbc:mysql://192.168.145.128:3306/mybatis?serverTimezone = UTC
+  redis:
+    host: 192.168.145.128
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level:
+   com:
+    springboot:
+      mapper:
+        debug
+#debug: true
+

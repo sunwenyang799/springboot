@@ -1,0 +1,55 @@
+-------------------------------------------------------------------------------
+Test set: com.springboot.SpringbootCacheApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 9.691 s <<< FAILURE! - in com.springboot.SpringbootCacheApplicationTests
+contextLoads  Time elapsed: 5.156 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/springboot/mapper/EmployeeMapper.java (best guess)
+### The error may involve com.springboot.mapper.EmployeeMapper.getEmpById
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.springboot.SpringbootCacheApplicationTests.contextLoads(SpringbootCacheApplicationTests.java:59)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/springboot/mapper/EmployeeMapper.java (best guess)
+### The error may involve com.springboot.mapper.EmployeeMapper.getEmpById
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.springboot.SpringbootCacheApplicationTests.contextLoads(SpringbootCacheApplicationTests.java:59)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: 
+Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.springboot.SpringbootCacheApplicationTests.contextLoads(SpringbootCacheApplicationTests.java:59)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.springboot.SpringbootCacheApplicationTests.contextLoads(SpringbootCacheApplicationTests.java:59)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.springboot.SpringbootCacheApplicationTests.contextLoads(SpringbootCacheApplicationTests.java:59)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.springboot.SpringbootCacheApplicationTests.contextLoads(SpringbootCacheApplicationTests.java:59)
+
+testRedisTemplate  Time elapsed: 0 s  <<< ERROR!
+org.springframework.data.redis.serializer.SerializationException: Cannot deserialize; nested exception is org.springframework.core.serializer.support.SerializationFailedException: Failed to deserialize payload. Is the byte array a result of corresponding serialization for DefaultDeserializer?; nested exception is java.io.StreamCorruptedException: invalid stream header: 61616161
+	at com.springboot.SpringbootCacheApplicationTests.testRedisTemplate(SpringbootCacheApplicationTests.java:53)
+Caused by: org.springframework.core.serializer.support.SerializationFailedException: Failed to deserialize payload. Is the byte array a result of corresponding serialization for DefaultDeserializer?; nested exception is java.io.StreamCorruptedException: invalid stream header: 61616161
+	at com.springboot.SpringbootCacheApplicationTests.testRedisTemplate(SpringbootCacheApplicationTests.java:53)
+Caused by: java.io.StreamCorruptedException: invalid stream header: 61616161
+	at com.springboot.SpringbootCacheApplicationTests.testRedisTemplate(SpringbootCacheApplicationTests.java:53)
+
