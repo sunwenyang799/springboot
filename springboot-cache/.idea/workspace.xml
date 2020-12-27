@@ -5,21 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad067ad7-c3be-40f9-ba39-478ff0fa4e0f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/SpringbootCacheApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/config/MyCacheConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/controller/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/entity/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/entity/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mapper/DepartmentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mapper/EmployeeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/DepartmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/impl/DepartmentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/springboot/SpringbootCacheApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/controller/DepartmentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Learning.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../Learning.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/config/MyCacheConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/config/MyCacheConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/entity/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/service/impl/DepartmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/impl/DepartmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,15 +59,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RunManager" selected="JUnit.SpringbootCacheApplicationTests.testStringRedisTemplate">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -152,6 +143,7 @@
       <updated>1606911138136</updated>
       <workItem from="1606911142281" duration="1834000" />
       <workItem from="1606914181951" duration="1852000" />
+      <workItem from="1607237633487" duration="880000" />
     </task>
     <servers />
   </component>
@@ -207,6 +199,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606914255980" />
+    <state x="178" y="72" key="new project wizard" timestamp="1607245157606">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="72" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1607245157606" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606915706436">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

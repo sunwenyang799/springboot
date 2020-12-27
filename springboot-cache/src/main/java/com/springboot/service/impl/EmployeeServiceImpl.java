@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
  * @date 2020/11/30 16:09
  */
 @Service
-@CacheConfig(cacheNames = "emp")//全局配置缓存属性
+@CacheConfig(cacheNames = "emp",cacheManager = "empCacheManager")//全局配置缓存属性
 public class EmployeeServiceImpl implements EmployeeService {
 
     @Autowired

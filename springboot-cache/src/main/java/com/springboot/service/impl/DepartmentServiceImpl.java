@@ -4,6 +4,8 @@ import com.springboot.entity.Department;
 import com.springboot.mapper.DepartmentMapper;
 import com.springboot.service.DepartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheConfig;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 /**
@@ -12,12 +14,14 @@ import org.springframework.stereotype.Service;
  * @date 2020/11/30 16:09
  */
 @Service
+@CacheConfig(cacheManager = "deptCacheManager")
 public class DepartmentServiceImpl implements DepartmentService {
 
     @Autowired
     private DepartmentMapper departmentMapper;
 
     @Override
+    @Cacheable(value = "dept")
     public Department getDeptById(Integer id) {
         return departmentMapper.getDeptById(id);
     }

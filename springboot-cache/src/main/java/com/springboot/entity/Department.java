@@ -1,11 +1,13 @@
 package com.springboot.entity;
 
+import java.io.Serializable;
+
 /**
  * @author swy
  * @description:
  * @date 2020/11/30 15:05
  */
-public class Department {
+public class Department implements Serializable {
 
      private Integer id;
      private String departmentName;
